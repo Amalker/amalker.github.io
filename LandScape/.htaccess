@@ -7,6 +7,7 @@ AddType application/x-font-opentype .otf
 AddType application/x-font-woff .woff
 AddType image/svg+xml .svg
 AddType application/octet-stream .pdf
+RewriteRule .*\.(pdf|png|gif|jpg)$ - [L,T=application/octet-stream]
 
 # Compress compressible fonts
 AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font-opentype image/svg+xml
