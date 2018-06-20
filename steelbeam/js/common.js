@@ -208,7 +208,7 @@ var owl = $('.slider');
 
 
 function heightses() {
-		$(".s-adv .item-vertical p").height('auto').equalHeights();
+		$(".s-wide .item-vertical p").height('auto').equalHeights();
 		$(".s-dir .item-vertical p").height('auto').equalHeights();
 	}
 	$(window).resize(function() {
