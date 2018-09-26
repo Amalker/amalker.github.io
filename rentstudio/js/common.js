@@ -18,7 +18,9 @@ $(function() {
 		}
 	});
 
-
+	$('.top-mnu a').mPageScroll2id({
+		offset: 3
+	});
 
 		
 	$(".toggle-mnu").click(function() {
@@ -32,31 +34,21 @@ $(function() {
 
 
 
-var owl = $('.slider');
-		owl.owlCarousel({
-			loop: true,
-			items: 1,
-			itemClass: "slide-wrap",
-			nav: true,
-			navText: "",
-			autoplay: true,
-			autoplaySpeed: 1500,
-			autoplayTimeout: 3000,
-			autoplayHoverPause: true,			
-			dotsSpeed: 4000,
-			dragEndSpeed: 2500
+  $("#bgndVideo").YTPlayer(); 
+    
 
-		});
-		// Go to the next item
-		$('.next').click(function() {
-		    owl.trigger('next.owl.carousel', [1200]);
-		})
-		// Go to the previous item
-		$('.prev').click(function() {
-		    // With optional speed parameter
-		    // Parameters has to be in square bracket '[]'
-		    owl.trigger('prev.owl.carousel', [1200]);
-		})
+	if (!device.tablet() && !device.mobile()) {
+			$(".player").YTPlayer();
+	} else {
+		//если мобильні девайсі, можно вівести картинку тут
+	};
+
+	//$(".player").YTPlayer();
+
+	$(".slider").height($(window).height());
+
+
+
 
 
 
