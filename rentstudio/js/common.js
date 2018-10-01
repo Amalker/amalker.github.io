@@ -33,7 +33,7 @@ $(function() {
 	});
 
 
-	//$(".player").YTPlayer();
+
 
 	
 
