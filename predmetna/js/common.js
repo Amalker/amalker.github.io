@@ -29,6 +29,13 @@ $(function() {
 			}
 		}
 	});
+
+	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        preloader: true,
+	
+    });
 	
 	$(".section_header").animated("fadeInUp", "fadeOutDown");
 	$(".pd").animated("fadeInUp", "fadeOutDown");
