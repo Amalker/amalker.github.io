@@ -83,7 +83,7 @@ $(function() {
 
 	
 	function heightses() {
-		$(".item .item-vertical").height('auto').equalHeights();					
+		$(".item_vertical_top").height('auto').equalHeights();					
 	}
 	$(window).resize(function() {
 		heightses();
