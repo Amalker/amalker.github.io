@@ -79,7 +79,8 @@ $(function() {
 		};
 	});
 	
-	$(".top_mnu ul a").mPageScroll2id();
+	$(".top_menu ul a").mPageScroll2id();
+	$(".footer-column").mPageScroll2id();
 
 	
 	function heightses() {
