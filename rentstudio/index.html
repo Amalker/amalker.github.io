@@ -63,15 +63,18 @@ glstudio, gl studio, джи эль студио, джиэль студио ">
 												<img src="img/logo_black.png" alt="Аренда фотостудии">																	
 											</div>
 										</li>
-
+										
 										<li>
-											<a href="#rent" class="button">Замовити <br>відеоролик</a>
-										</li>
+											<a href="#callback" class="button"
+											data-form="Замовити відеоролик"
+											data-text="Замовити відеоролик"								
+											>Замовити <br>відеоролик</a>
+										</li>								
 
 										<li>
 											<a href="#callback" class="button"
-											data-form="Забронювати студію"
-											data-text="Забронювати"								
+											data-form="Замовити стрім"
+											data-text="Замовити стрім"								
 											>Замовити стрім <br> <span>(прямий ефір)</span> </a>
 										</li>
 
@@ -83,14 +86,21 @@ glstudio, gl studio, джи эль студио, джиэль студио ">
 
 										<li>
 											<a href="#callback" class="button"
-											data-form="Забронювати студію"
-											data-text="Забронювати"								
+											data-form="Оренда відеостудії"
+											data-text="Оренда відеостудії"								
 											>Оренда <br>відеостудії </a>
 										</li>
 
+										
 										<li>
-											<a href="#contacts" class="button">Просування<br> на Youtube</a>										
+											<a href="#callback" class="button"
+											data-form="Просування на Youtube"
+											data-text="Просування на Youtube"								
+											>Просування<br> на Youtube </a>
 										</li>
+
+
+
 
 									</ul>	
 								</nav>
@@ -389,7 +399,7 @@ glstudio, gl studio, джи эль студио, джиэль студио ">
 				</div>
 				<div class="copyright">
 
-					<span>Copyright Amalker © 2019</span>
+					<span>Copyright Amalker © 2020</span>
 
 				</div>
 
@@ -401,11 +411,11 @@ glstudio, gl studio, джи эль студио, джиэль студио ">
 
 			<form id='callback' class="callback white-popup-block form-call mfp-hide">
 
-				<div class="success"><span>Дякуємо за замовлення!</span></div>
+				<div class="success"><span>Дякуємо за звернення. Наш менеджер зв'яжеться з Вами найближчим часом</span></div>
 
 				<!-- Hidden Required Fields -->
-				<input type="hidden" name="project_name" value="Metal Solar">
-				<input type="hidden" name="admin_email" value="amalker@i.ua">
+				<input type="hidden" name="project_name" value="RentStudio">
+				<input type="hidden" name="admin_email" value="glstudio.contact@gmail.com">
 				<input type="hidden" name="form_subject" value="замовлення">
 				<!-- END Hidden Required Fields -->
 
@@ -415,13 +425,16 @@ glstudio, gl studio, джи эль студио, джиэль студио ">
 				<div class="formhead h3">Залишити замовлення</div>
 
 
-				<input type="text" name="Імя" placeholder='Ваше імя' required>	
-				<input type="email" name="email" placeholder='Ваш e-mail'>
-				<input type="text" name="Телефон" placeholder='Ваш телефон' required>
-				<input type="text" name="Дата" placeholder='Бажана дата'>
-				<input type="text" name="Час" placeholder='Час зйомки'>
+				<input type="text" name="Ім'я" placeholder="Ваше ім'я" required>					
+				<input type="text" name="Телефон" placeholder='Ваш телефон' required>		
+				
 
-				<textarea rows="4" name="Повідомлення" placeholder="Вашe повідомлення..."></textarea>
+				<ul class="contacts-text">
+
+					<li><i class="fa fa-map-marker"></i> <strong>Адреса:</strong> Київ, пр.Лобановського 53</li>
+					<li><i class="fa fa-phone"></i> <strong>Телефон:</strong> +38 (063) 667-55-26</a></li>						
+					<li><i class="fa fa-envelope-open-o"></i><strong>E-mail:</strong> glstudio.contact@gmail.com </a></li>
+				</ul>
 
 
 				<button class="button button-small">Відправити</button>
